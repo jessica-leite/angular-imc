@@ -1,0 +1,17 @@
+<div className="App">
+    <h1>IMC Calc</h1>
+    <div>
+      <div>
+        <label>Peso: </label>
+        <input type="number" [(ngModel)]="peso" (change)="calcularImc()" />
+      </div>
+      <div>
+        <label>Altura: </label>
+        <input type="number" [(ngModel)]="altura" (change)="calcularImc()" />
+      </div>
+    </div>
+    <div id="imc">
+      <label>Imc: </label>
+      <input type="number" [(ngModel)]="imc" (value)="imc"/>
+    </div>
+  </div>
